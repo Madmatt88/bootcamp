@@ -1,6 +1,6 @@
 use std::fs;
 
-use anyhow::Result;
+use anyhow::{Result, Ok};
 
 use crate::models::{DBState, Epic, Story, Status};
 
@@ -10,7 +10,7 @@ pub struct JiraDatabase {
 
 impl JiraDatabase {
     pub fn new(file_path: String) -> Self {
-        todo!()
+        println!("Started this section");
     }
 
     pub fn read_db(&self) -> Result<DBState> {
